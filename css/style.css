@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{box-sizing: border-box;
+  padding: 0;
+}
+:root{
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: var(--Violet);
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+  width: 80%;
+  font-size: 2em;
+}
+p{
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+  width: 74%;
+  line-height: 1.5;
+  font-size: 1em;
+}
+.logo{
+  margin: 2% auto 2% 2%;
+  }
+.main{
+  display: flex;
+  flex-direction: row;
+  max-width: 1450px
+}
+.image{
+  position: relative;
+  flex:50%;
+  padding: 1%;
+  margin: 2%;
+}
+.mockups{
+  width: 100%;
+}
+.info{
+  position: relative;
+  flex:50%;
+  padding: 1%;
+  margin: 2%;
+  flex-direction: column;
+}
+.bottom{
+  position: relative;
+  border-radius: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--Violet);
+  text-align: center;
+  background-color: white;
+  padding: 2%;
+  height: auto;
+  width: 200px;
+}
+.bottom:hover{
+color: white;
+background-color: var(--SoftMagenta);
+box-shadow: 3px 1px 15px 0 rgba(255, 255, 255, 0.39);
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 10%;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover{
+  color:var(--SoftMagenta);
+}
+.fa-facebook {
+  background: none;
+  color: white;
+}
+.fa-twitter {
+  background: none;
+  color: white;
+}
+.fa-instagram {
+  background: none;
+  color: white;
+}
+
+.attribution {
+  margin-top: 8%;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width:750px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    }
+  .bottom{
+    margin: 10% auto;
+  }
+  h2{
+    margin: auto;
+    text-align: center;
+    }
+  p{
+    margin: 8% auto;
+    text-align: center;
+    }
+  .social{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    }
+}
